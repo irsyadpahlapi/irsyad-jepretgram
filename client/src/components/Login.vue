@@ -42,6 +42,7 @@ export default {
         password: this.password
       }).then(response => {
         localStorage.setItem('token', response.data.token)
+        localStorage.setItem('iduser', response.data.idname)
         location.href = '/'
       })
     }
